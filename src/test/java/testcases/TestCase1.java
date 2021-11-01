@@ -1,5 +1,9 @@
 package testcases;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
 import java.util.Arrays;
 
 import org.testng.Assert;
@@ -68,7 +72,7 @@ public class TestCase1 {
 	public void doUserReg() {
 
 		test = extent.createTest("Registration Test");
-		Assert.fail("Executing registration test");
+		AssertJUnit.fail("Executing registration test");
 
 	}
 
@@ -86,7 +90,7 @@ public class TestCase1 {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			
 			String excepionMessage = Arrays.toString(result.getThrowable().getStackTrace());
-			test.fail("<details>" + "<summary>" + "<b>" + "<font color=" + "red>" + "Exception Occured:Click to see"
+			Assert.fail("<details>" + "<summary>" + "<b>" + "<font color=" + "red>" + "Exception Occured:Click to see"
 					+ "</font>" + "</b >" + "</summary>" + excepionMessage.replaceAll(",", "<br>") + "</details>"
 					+ " \n");
 			

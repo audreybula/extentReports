@@ -2,39 +2,24 @@
 <testng-results skipped="1" failed="1" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="395" started-at="2021-11-01T08:56:31Z" finished-at="2021-11-01T08:56:32Z">
+  <suite name="Extent Report Suite" duration-ms="50" started-at="2021-11-01T09:19:33Z" finished-at="2021-11-01T09:19:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="395" started-at="2021-11-01T08:56:31Z" finished-at="2021-11-01T08:56:32Z">
-      <class name="testcases.TestCase1">
-        <test-method status="PASS" signature="setReport()[pri:0, instance:testcases.TestCase1@147ed70f]" name="setReport" is-config="true" duration-ms="104" started-at="2021-11-01T08:56:31Z" finished-at="2021-11-01T08:56:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setReport -->
-        <test-method status="PASS" signature="doLogin()[pri:0, instance:testcases.TestCase1@147ed70f]" name="doLogin" duration-ms="9" started-at="2021-11-01T08:56:31Z" finished-at="2021-11-01T08:56:31Z">
+    <test name="Test" duration-ms="50" started-at="2021-11-01T09:19:33Z" finished-at="2021-11-01T09:19:33Z">
+      <class name="testcases.TestCase2">
+        <test-method status="PASS" signature="doLogin()[pri:0, instance:testcases.TestCase2@399f45b1]" name="doLogin" duration-ms="9" started-at="2021-11-01T09:19:33Z" finished-at="2021-11-01T09:19:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.TestCase1@147ed70f]" name="tearDown" is-config="true" duration-ms="16" started-at="2021-11-01T08:56:31Z" finished-at="2021-11-01T08:56:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=doLogin status=SUCCESS method=TestCase1.doLogin()[pri:0, instance:testcases.TestCase1@147ed70f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="doUserReg()[pri:0, instance:testcases.TestCase1@147ed70f]" name="doUserReg" duration-ms="2" started-at="2021-11-01T08:56:31Z" finished-at="2021-11-01T08:56:31Z">
+        <test-method status="FAIL" signature="doUserReg()[pri:0, instance:testcases.TestCase2@399f45b1]" name="doUserReg" duration-ms="1" started-at="2021-11-01T09:19:33Z" finished-at="2021-11-01T09:19:33Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Executing registration test]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Executing registration test
-at org.testng.Assert.fail(Assert.java:96)
-at testcases.TestCase1.doUserReg(TestCase1.java:71)
+at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+at testcases.TestCase2.doUserReg(TestCase2.java:21)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -66,25 +51,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doUserReg -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.TestCase1@147ed70f]" name="tearDown" is-config="true" duration-ms="2" started-at="2021-11-01T08:56:31Z" finished-at="2021-11-01T08:56:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=doUserReg status=FAILURE method=TestCase1.doUserReg()[pri:0, instance:testcases.TestCase1@147ed70f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="isSkip()[pri:0, instance:testcases.TestCase1@147ed70f]" name="isSkip" duration-ms="1" started-at="2021-11-01T08:56:32Z" finished-at="2021-11-01T08:56:32Z">
+        <test-method status="SKIP" signature="isSkip()[pri:0, instance:testcases.TestCase2@399f45b1]" name="isSkip" duration-ms="1" started-at="2021-11-01T09:19:33Z" finished-at="2021-11-01T09:19:33Z">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping test]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping test
-at testcases.TestCase1.isSkip(TestCase1.java:79)
+at testcases.TestCase2.isSkip(TestCase2.java:28)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -116,22 +90,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isSkip -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.TestCase1@147ed70f]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-11-01T08:56:32Z" finished-at="2021-11-01T08:56:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=isSkip status=SKIP method=TestCase1.isSkip()[pri:0, instance:testcases.TestCase1@147ed70f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:testcases.TestCase1@147ed70f]" name="endReport" is-config="true" duration-ms="239" started-at="2021-11-01T08:56:32Z" finished-at="2021-11-01T08:56:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-      </class> <!-- testcases.TestCase1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testcases.TestCase2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Extent Report Suite -->
 </testng-results>
